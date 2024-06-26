@@ -1,0 +1,280 @@
+<html>
+        <head>
+            <title>GIT</title>
+        </head>
+        <script src="/static/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+
+    <style>
+      body div{display: inline-block;}
+      body input{display: inline-block;}
+      .logo{font-family: "Roboto", sans-serif;
+      z-index: 1;
+      background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+      opacity: 99%;
+      padding: 5px 5px 5px 5px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+      margin-top:5px;
+      margin-left:00px;
+      position :relative;
+      text-align: center;
+      width:1500px;
+      height:100px;}
+      
+      .title{font-family: "Roboto", sans-serif;
+      z-index: 1;
+      background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+      opacity: 99%;
+      font-size: 30px;
+      padding: 20px 10px 10px 10px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+      margin-top:5px;
+      margin-left:200px;
+      position :absolute;
+      text-align: center;
+      height:50px;}
+
+      #text{font-family: "Roboto", sans-serif;
+      z-index: 1;
+      background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+      opacity: 99%;
+      font-size: 30px;
+      padding: 20px 10px 10px 10px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+      margin-top:5px;
+      margin-left:100px;
+      position :absolute;
+      text-align: center;
+      width:1270px}
+
+
+      .firstbutton{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 10px 5px 5px 5px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:100px;
+        margin-left:100px;
+        font-size: 20px;
+
+        position :absolute;
+        width:410px;
+        height:25px;
+        text-align: center;}
+        
+
+        .secondbutton{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 10px 45px 30px 45px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:100px;
+        margin-left:535px;
+        font-size: 20px;
+
+        position :absolute;
+        width:330px;
+        height:3px;
+        border:none;
+        text-align: center;}
+
+        .thirdbutton{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 10px 45px 30px 45px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:100px;
+        margin-left:970px;
+        font-size: 20px;
+
+        position :absolute;
+        width:330px;
+        height:3px;
+        border:none;
+        text-align: center;}
+
+        .first{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:150px;
+        margin-left:100px;
+        position :relative;
+        width:410px;
+        height:400px;}
+
+        .second{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:50px;
+        margin-left:10px;
+
+        position :relative;
+        width:410px;
+        height:400px;}
+
+        .third{font-family: "Roboto", sans-serif;
+        z-index: 1;
+        background-image: linear-gradient(190deg,  #ABDCFF 50%, #86FDE8 100%);
+        opacity: 99%;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top:50px;
+        margin-left:10px;
+
+        position :relative;
+        width:410px;
+        height:400px;}
+        
+        
+        </style>
+
+<body>
+  <div class="logo">
+    <img src="/static/Gates.png" style="position:relative" >
+
+  </div>
+  <br>
+    <div class="title">Enforcing Helmet Compliance: AI-Based Vehicle Plate and Rider Safety System</div>
+    <label for="upload" class="firstbutton" >Upload Image</label>
+    <input type="file" class ="firstbut" onchange="addupload()" id="upload" style="display:none">
+
+    <div type="button" class="secondbutton" id="secondbutton" onclick="detect_person_and_bike()" >Detect Motor Bike & Person</div>
+          
+    <div type="button" class="thirdbutton" id="secondbutton" onclick="helmet_and_numberplate()">Detect Helmet & Number Plate</div>
+          
+           
+    <div class="first" id="first">
+      <img src="/static/venu1.jpg" id="uploadimage" onerror="this.style.display='none'" width="410px" height="400px;" >
+
+    </div>
+
+    <div class="second" id="second">
+
+        <img src="/static/venu1.jpg" width="410px" onerror="this.style.display='none'" id="detectpandm" height="400px;">
+    </div>
+
+    <div class="third" id="second">
+      <img src="/static/venu1.jpg" width="410px" height="400px;" onerror="this.style.display='none'" id="detecthandn">
+      <img src="/static/numberplat.jpg" width="100px" height="100px;" onerror="error()" style="position:absolute;margin-left:400px;margin-top:-350"  id="detecthand">
+
+
+        
+    </div>
+        <br><span><div id="text" ></div></span>
+        
+</body>
+{% csrf_token %}
+
+<script>
+  function error(){
+  document.getElementById('detecthand').style="display:none;"}
+
+  function addupload()
+    {
+      var image = document.getElementById('uploadimage');
+        fileName=event.target.files[0]
+        fileName=fileName.name;
+        size=event.target.files[0].size;
+        image.src= URL.createObjectURL(event.target.files[0]);
+        var formData = new FormData();
+        formData.append("file",$("input[id='upload']")[0].files[0]);
+        csrf_token = $('input[name="csrfmiddlewaretoken"]').val();
+        formData.append("csrfmiddlewaretoken", csrf_token);
+        $.ajax({  
+        type:'POST',
+        url:"/upload",
+        processData: false,
+        contentType : false,
+        data:formData,
+              success: function (data) {
+                image.style="display:block"
+
+              
+              }
+            })
+    }
+
+    function detect_person_and_bike(){
+      var formData = new FormData();
+
+      csrf_token = $('input[name="csrfmiddlewaretoken"]').val();
+formData.append("csrfmiddlewaretoken", csrf_token);
+  $.ajax({  
+  type:'POST',
+  url:"/detect_person_and_bike",
+  processData: false,
+  contentType : false,
+  data:formData,
+        success: function (data) {
+          setTimeout(viewsrefresh1(), 10000);
+          document.getElementById('detectpandm').src="/static/save2.jpg"
+          document.getElementById('detectpandm').style="display:block"
+
+  
+        }
+      })
+      }
+      function viewsrefresh1(){
+        
+        document.getElementById('detectpandm').src="/static/save2.jpg"
+
+      }
+    function helmet_and_numberplate(){
+      var formData = new FormData();
+
+      csrf_token = $('input[name="csrfmiddlewaretoken"]').val();
+formData.append("csrfmiddlewaretoken", csrf_token);
+  $.ajax({  
+  type:'POST',
+  url:"/helmet_and_numberplate",
+  processData: false,
+  contentType : false,
+  data:formData,
+        success: function (data) {
+          
+          setTimeout(viewsrefresh(), 10000);
+          document.getElementById('detecthandn').src="/static/save3.jpg"
+          document.getElementById('detecthand').style="display:block;position:absolute;margin-left:300px;margin-top:-370"
+          document.getElementById('detecthand').src="/static/numberplate.jpg"
+          document.getElementById('text').innerHTML=data
+
+
+          
+  
+        }
+      })
+      
+
+    }
+    function viewsrefresh(){
+      document.getElementById('detecthandn').src="/static/save3.jpg"
+      document.getElementById('detecthandn').style="display:block"
+
+
+
+    }
+    
+    
+    
+</script>
+
+
+</html>
+      
